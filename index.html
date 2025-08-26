@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Калкулатори</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
 <div class="calculator-container">
   <!-- Ляв калкулатор за разпределение на заплата -->
   <div class="calculator">
@@ -22,7 +31,7 @@
     <input type="number" id="interestRate" placeholder="Лихвен процент" />
     
     <label for="salaryForLoan">Заплата (лв.):</label>
-    <input type="number" id="salaryForLoan" placeholder="Заплата от калкулатора за заплата" disabled />
+    <input type="number" id="salaryForLoan" placeholder="Заплата от калкулатора за заплата" readonly />
     
     <button onclick="calculateMortgage()">Изчисли</button>
     
@@ -30,3 +39,7 @@
     <p><strong><span id="mortgage-warning"></span></strong></p>
   </div>
 </div>
+
+<script src="script.js"></script>
+</body>
+</html>
