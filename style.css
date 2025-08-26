@@ -1,3 +1,9 @@
+/* CSS styles */
+h1 {
+  font-family: Impact, sans-serif;
+  color: #CE5937;
+}
+
 /* Контейнер за калкулаторите */
 .calculator-container {
   display: flex;
@@ -35,4 +41,12 @@ input {
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 16px;
+}
+
+#salary-result, #mortgage-result {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #eee;
 }
