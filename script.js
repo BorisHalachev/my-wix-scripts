@@ -62,3 +62,4 @@ function updateSalaryForLoan() {
     document.getElementById("salaryForLoan").value = '';
   }
 }
+
