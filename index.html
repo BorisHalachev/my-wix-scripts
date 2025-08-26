@@ -1,23 +1,32 @@
-<!DOCTYPE html>
-<html lang="bg">
-<head>
-  <meta charset="UTF-8">
-  <title>Калкулатор - Правило на 72</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h2>Калкулатор по Правилото на 72</h2>
-  
-  <label for="rate">Лихвен процент (% годишно):</label>
-  <input type="number" id="rate" placeholder="Пример: 6">
+<div class="calculator-container">
+  <!-- Ляв калкулатор за разпределение на заплата -->
+  <div class="calculator">
+    <h2>Калкулатор за разпределение на заплата</h2>
+    <label for="salary">Заплата (лв.):</label>
+    <input type="number" id="salary" placeholder="Въведете заплата" oninput="updateSalaryForLoan()"/>
+    <button onclick="calculateSalaryDistribution()">Изчисли</button>
+    <div id="salary-result"></div>
+    <p>Вземи твоята кратка безплатна консултация как да вложиш свободните си средства.</p>
+  </div>
 
-  <label for="years">Брой години:</label>
-  <input type="number" id="years" placeholder="Пример: 12">
-
-  <button id="calcButton">Изчисли</button>
-
-  <div id="result" class="result"></div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  <!-- Десен калкулатор за ипотечен кредит -->
+  <div class="calculator">
+    <h2>Калкулатор за ипотечен кредит</h2>
+    <label for="loanAmount">Сума на кредита (лв.):</label>
+    <input type="number" id="loanAmount" placeholder="Сума на кредита" />
+    
+    <label for="loanTerm">Срок на кредита (години):</label>
+    <input type="number" id="loanTerm" placeholder="Срок на кредита" />
+    
+    <label for="interestRate">Лихвен процент (%):</label>
+    <input type="number" id="interestRate" placeholder="Лихвен процент" />
+    
+    <label for="salaryForLoan">Заплата (лв.):</label>
+    <input type="number" id="salaryForLoan" placeholder="Заплата от калкулатора за заплата" disabled />
+    
+    <button onclick="calculateMortgage()">Изчисли</button>
+    
+    <div id="mortgage-result"></div>
+    <p><strong><span id="mortgage-warning"></span></strong></p>
+  </div>
+</div>
