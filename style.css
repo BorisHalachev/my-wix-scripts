@@ -37,7 +37,7 @@ button:hover {
 
 input {
   width: 100%;
-  padding: 8px;
+  padding: 8 12 8 12 ;
   margin-bottom: 15px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -51,4 +51,12 @@ input {
   background-color: #fff;
   border-radius: 8px;
   border: 1px solid #eee;
+}
+.right-input{
+  margin-left:-15px;
+
+}
+h2{
+  text-align: left;
+  margin-left:-5px;
 }
