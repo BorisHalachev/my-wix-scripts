@@ -64,7 +64,7 @@ h2{
 @media (max-width: 768px) {
   .calculator-container {
     flex-direction: column; /* Подрежда калкулаторите един под друг */
-    gap: 10px;
+    gap: 20px;
   }
 
   .calculator {
