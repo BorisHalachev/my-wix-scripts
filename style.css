@@ -8,7 +8,7 @@ h1 {
 .calculator-container {
   display: flex;
   justify-content: space-between;
-  gap: 20px; /* Разстояние между калкулаторите */
+  gap: 5px; /* Разстояние между калкулаторите */
 }
 
 /* Индивидуален калкулатор */
